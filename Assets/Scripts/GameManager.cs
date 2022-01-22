@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     bool gameHasEnded = false;
+    public float restartDelay = 2f;
     public void endGame()
     {
         if(gameHasEnded == false)
@@ -11,7 +12,7 @@ public class GameManager : MonoBehaviour
             gameHasEnded = true;
             Debug.Log("Game Over!!!");
             //TODO: restart
-            restart();
+            Invoke("restart", restartDelay);
         }
     }
 
