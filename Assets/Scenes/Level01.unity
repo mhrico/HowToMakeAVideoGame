@@ -310,13 +310,14 @@ GameObject:
   - component: {fileID: 62486838}
   - component: {fileID: 62486840}
   - component: {fileID: 62486839}
+  - component: {fileID: 62486841}
   m_Layer: 5
   m_Name: LevelComplete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &62486838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -376,6 +377,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62486837}
   m_CullTransparentMesh: 1
+--- !u!95 &62486841
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 62486837}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f59e60d81c0fc2d4da7cd013d7e27159, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &71837279
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5286,7 +5306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 2
-  CompleteLevelUI: {fileID: 62486837}
+  completeLevelUI: {fileID: 62486837}
 --- !u!4 &1676656287
 Transform:
   m_ObjectHideFlags: 0
